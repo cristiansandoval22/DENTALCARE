@@ -9,7 +9,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "component": "node scripts/create-component.js"
   },
   "dependencies": {
     "astro": "^6.0.8"

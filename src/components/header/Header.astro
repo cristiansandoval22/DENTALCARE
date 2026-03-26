@@ -1,0 +1,48 @@
+---
+import ButtonPrimary from "@components/button-primary/Button-primary.astro";
+import "./Header.css";
+---
+
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">
+            Dental
+            <span>Care</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Inicio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#new" class="nav__link">Terapia</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#shop" class="nav__link">Servicios</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#care" class="nav__link">Quiénes Somos</a>
+                </li>
+
+                <ButtonPrimary href="https://cssgradient.io/" text="Contacto" />
+            </ul>
+
+            <!-- CLOSE BUTTON -->
+            <button class="nav__close" id="nav-close">
+                <span class="material-symbols--close-rounded"></span>
+            </button>
+        </div>
+
+        <!-- TOGGLE BUTTON -->
+        <button class="nav__toggle" id="nav-toggle">
+            <span class="flowbite--bars-outline"></span>
+        </button>
+    </nav>
+</header>
+
+<script src="/src/components/header/Header.js"></script>

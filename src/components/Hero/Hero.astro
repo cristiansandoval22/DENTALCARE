@@ -1,0 +1,58 @@
+---
+import ButtonPrimary from "@components/button-primary/Button-primary.astro";
+import "./Hero.css";
+import heroImg from "@/assets/img__hero.png";
+---
+
+<section class="hero container">
+
+  <!-- CONTENIDO -->
+  <div class="hero__content">
+
+    <h1 class="hero__title">
+      Fai che il tuo <span class="hero__highlight">sorriso</span> sia la curva che raddrizza la tua vita.
+    </h1>
+
+    <p class="hero__description">
+      Offriamo servizi dentali di alta qualità con la presenza di esperti di
+      ogni tipologia di trattamento, soddisfando le esigenze di ogni paziente
+    </p>
+
+    <ButtonPrimary href="#" text="Prenota ora" />
+
+    <!-- INFO -->
+    <div class="hero__info">
+
+      <!-- ITEM -->
+      <div class="info-item">
+        <div class="info-item__icon">
+          <span class="famicons--call"></span>
+        </div>
+
+        <div class="info-item__content">
+          <p class="info-item__title">Numero telefonico:</p>
+          <p class="info-item__text">820 320 320</p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="info-item">
+        <div class="info-item__icon">
+          <span class="mdi--location"></span>
+        </div>
+
+        <div class="info-item__content">
+          <p class="info-item__title">Corso Luigi Enaudi 56</p>
+          <p class="info-item__text">10023 Torino</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- IMAGEN -->
+  <div class="hero__image">
+    <img src={heroImg.src} alt="Doctor smiling" />
+  </div>
+
+</section>
