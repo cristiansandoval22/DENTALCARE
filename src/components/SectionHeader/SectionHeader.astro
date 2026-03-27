@@ -1,7 +1,9 @@
 ---
 import './SectionHeader.css'
+const { title, description, align = 'left' } = Astro.props;
 ---
 
-<div class="sectionheader">
-  SectionHeader component
-</div>
+<header class={`section-header section-header--${align}`}>
+  <h2 class="section-header__title">{title}</h2>
+  <p class="section-header__description">{description}</p>
+</header>

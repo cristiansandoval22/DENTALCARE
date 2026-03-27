@@ -1,0 +1,81 @@
+.services-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 280px;
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-background);
+    border-radius: 45px;
+    overflow: hidden;
+
+}
+
+/* CAPA DEL GRADIENTE */
+.service-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(15, 38, 80, 0.81) 100%);
+
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+/* HOVER */
+.service-item:hover {
+    border-color: transparent;
+}
+
+.service-item:hover::before {
+    opacity: 1;
+}
+
+/* EFECTO EXTRA */
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* ASEGURAR QUE EL CONTENIDO ESTÉ ENCIMA */
+.service-item>* {
+    position: relative;
+    z-index: 1;
+}
+
+.service-item:hover .service-item__title {
+    color: var(--color-secondary);
+}
+
+.service-item:hover .service-item__description {
+    color: white;
+}
+
+.services-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+}
+
+.service-item__description {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1024px) {
+    .services-items {
+        justify-content: space-between;
+    }
+}
