@@ -9,7 +9,7 @@
     display: inline-block;
 
 
-    background: 0F2650;
+    background: #0F2650;
     background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(15, 38, 80, 0.81) 100%);
     background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(15, 38, 80, 0.81) 100%);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(15, 38, 80, 0.81) 100%);

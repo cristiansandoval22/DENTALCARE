@@ -1,0 +1,46 @@
+---
+import './Services.css'
+import ButtonPrimary from "@components/button-primary/Button-primary.astro";
+import SectionHeader from '@components/SectionHeader/SectionHeader.astro';
+import ProtesiDentali from "@/assets/Protesi-dentali.png";
+import Ortodonzia  from "@/assets/Ortodonzia.png";
+import Sbiancamento  from "@/assets/Sbiancamento.png";
+import IgieneDentale   from "@/assets/Igiene-dentale.png";
+---
+
+<section class="container services section">
+  <SectionHeader 
+  title="I nostri servizi" 
+  description="La Nostra Lista Di Trattamenti" 
+  align="center" />
+  
+  <section class="services-items">
+    <div class="service-item">
+      <img src={ProtesiDentali.src} alt="Protesi Dentali" />
+      <h3 class="service-item__title">Protesi dentali</h3>
+      <p class="service-item__description">Tecnologia avnzata con risultati sorprendenti.</p>
+    </div>
+
+    <div class="service-item">
+      <img src={Ortodonzia.src} alt="Ortodonzia" />
+      <h3 class="service-item__title">Ortodonzia</h3>
+      <p class="service-item__description">Sigillatura del canale ripulito e disinfettato</p>
+    </div>
+
+    <div class="service-item">
+      <img src={Sbiancamento.src} alt="Sbiancamento" />
+      <h3 class="service-item__title">Sbiancamento</h3>
+      <p class="service-item__description">Pulizia professionale con strumenti manuali </p>
+    </div>
+
+    <div class="service-item">
+      <img src={IgieneDentale.src} alt="Igiene Dentale" />
+      <h3 class="service-item__title">Igiene dentale</h3>
+      <p class="service-item__description">Trattamenti di igiene orale professionale.</p>
+    </div>
+  </section>
+  <section class="services-button">
+    <ButtonPrimary href="#" text="Scopri di più " />
+  </section>
+  
+</section>
