@@ -1,0 +1,92 @@
+---
+import "./SectionAbout.css";
+import SectionHeader from "@components/SectionHeader/SectionHeader.astro";
+import ImgOrari from "@/assets/Orari.png";
+import ImgDilazioni from "@/assets/Dilazioni.png";
+import AboutImg from "@/assets/About__img.png";
+---
+
+<section class="about section container">
+  <!-- CONTENIDO -->
+  <div class="about__content">
+    <!-- HEADER -->
+    <SectionHeader
+      title="I nostri servizi"
+      description="La Nostra Lista Di Trattamenti"
+      align="left__center"
+    />
+    <p>
+      DentalCare è la prima realtà della sanità privata italiana ad avere 3
+      Certificazioni ISO in Qualità, Ambiente e Sicurezza: la qualità dei
+      servizi offerti ai pazienti viene certificata da enti terzi e innovazione
+      e formazione giocano un ruolo fondamentale nello sviluppo della
+      professione.
+    </p>
+    <!-- FEATURES -->
+    <div class="about__features">
+      <!-- ITEM -->
+      <div class="feature-item">
+        <div class="feature-item__icon">
+          <img src={ImgOrari.src} alt="Orari completi per tutti" />
+        </div>
+
+        <div class="feature-item__content">
+          <h3 class="feature-item__title">Orari completi per tutti</h3>
+          <p class="feature-item__text">
+            I Centri DentalPro sono aperti dalle 9 di mattina fino alle 20 con
+            orario continuato.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="feature-item">
+        <div class="feature-item__icon">
+          <img src={ImgDilazioni.src} alt="Dilazioni di pagamento" />
+        </div>
+
+        <div class="feature-item__content">
+          <h3 class="feature-item__title">Dilazioni di pagamento</h3>
+          <p class="feature-item__text">
+            DentalCare offre un piano di pagamento personalizzato, La salute del
+            paziente deve essere sempre il nostro primo obiettivo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGEN -->
+  <div class="about__image">
+    <img src={AboutImg.src} alt="Doctor holding dental tools" />
+  </div>
+</section>
+<section class="stats container">
+  <article class="stats__item">
+    <div>
+      <h2 class="stats__item-title">1783+</h2>
+      <p class="stats__item-text">Pazienti felici</p>
+    </div>
+  </article>
+
+  <article class="stats__item">
+    <div>
+      <h2 class="stats__item-title">730+</h2>
+      <p class="stats__item-text">Appuntamenti online</p>
+    </div>
+  </article>
+
+  <article class="stats__item">
+    <div>
+      <h2 class="stats__item-title">15+</h2>
+      <p class="stats__item-text">Premi ottenuti</p>
+    </div>
+  </article>
+
+  <article class="stats__item">
+    <div>
+      <h2 class="stats__item-title">7+</h2>
+      <p class="stats__item-text">Anni di esperienza</p>
+    </div>
+  </article>
+</section>
