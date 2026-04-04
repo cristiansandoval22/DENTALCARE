@@ -6,7 +6,16 @@
 .section-header--left {
   text-align: left;
 }
+.section-header--left__center {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+ .section-header--left__center {
+  text-align: left;
+}
 
+  
+}
 .section-header--center {
   text-align: center;
   margin: 0 auto;
@@ -24,3 +33,4 @@
   color: var(--color-muted);
   font-weight: 700;
 }
+

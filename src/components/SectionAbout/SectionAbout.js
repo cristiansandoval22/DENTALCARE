@@ -1,0 +1,1 @@
+// lógica JS para SectionAbout
