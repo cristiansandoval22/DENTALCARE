@@ -1,0 +1,49 @@
+---
+import "./Sectionstaff.css";
+import SectionHeader from "@components/SectionHeader/SectionHeader.astro";
+import TeamCard from "@components/TeamCard/TeamCard.astro";
+import Doctor1 from "@/assets/FabioRusso.png";
+import Doctor2 from "@/assets/MartinaGallo.png";
+import Doctor3 from "@/assets/LucaFerrero.png";
+import Doctor4 from "@/assets/GiuliaSanti.png";
+---
+
+<section class="staff section container">
+  <SectionHeader
+    title="LO STAFF"
+    description="Incontra i nostri specialisti"
+    align="center"
+  />
+  <!-- LISTA -->
+  <div class="team__grid">
+
+    <!-- CARD -->
+    <TeamCard 
+    name="Fabio Russo" 
+    role="Chirurgo dentale" 
+    image={Doctor1.src} 
+    />
+
+    <!-- CARD -->
+    <TeamCard 
+      name="Martina Gallo" 
+      role="Assistente" 
+      image={Doctor2.src} 
+    />
+
+    <!-- CARD -->
+    <TeamCard
+      name="Luca Ferrero"
+      role="Igienista dentale"
+      image={Doctor3.src}
+    />
+
+    <!-- CARD -->
+    <TeamCard 
+      name="Giulia Santi" 
+      role="Odontotecnico" 
+      image={Doctor4.src} 
+    />
+  
+  </div>
+</section>

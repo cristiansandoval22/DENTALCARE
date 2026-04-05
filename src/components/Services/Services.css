@@ -49,11 +49,7 @@
     transform: translateY(-10px);
 }
 
-/* ASEGURAR QUE EL CONTENIDO ESTÉ ENCIMA */
-.service-item>* {
-    position: relative;
-    z-index: 1;
-}
+
 
 .service-item:hover .service-item__title {
     color: var(--color-secondary);
