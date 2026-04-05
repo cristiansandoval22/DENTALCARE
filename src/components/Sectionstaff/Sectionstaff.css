@@ -1,0 +1,21 @@
+.team__grid {
+    display: grid;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .team__grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .team__grid {
+        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        justify-items: stretch;
+        /* justify-items: center; */
+    }
+}
